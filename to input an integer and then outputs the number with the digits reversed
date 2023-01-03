@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Reverse {
+public static void main(String[] args)
+{
+Scanner input=new Scanner(System.in);
+int number= input.nextInt();
+int d=number,rev=0,rem=0;
+while(d!=0)
+{
+rem=d%10;
+rev=rev*10+rem;
+d=d/10;
+}
+System.out.println(+rev);
+}
+}
